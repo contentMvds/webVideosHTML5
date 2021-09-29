@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Web Video HTML5 | More</title>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-light bg-light fixed-top shadow">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="home.html">WEB VIDEO HTML5</a>
+        <div>Dashboard</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Sair</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-xxl" style="margin-top: 70px;">
+      <div class="row">
+        <div class="offset-2 col-8">
+          <div class="card shadow rounded-0 position-relative p-3" style="min-height: 400px; height: auto;">
+            <div class="card-body">
+              <div class="mb-3">
+                <h1 class="card-title display-6">Compre meus curso aqui</h1>
+              </div>
+              <div class="mt-3 mb-3">
+                <figure>
+                  <blockquote class="blockquote">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa tempore molestias voluptates
+                      ratione magnam corrupti dicta officia recusandae illum ipsum voluptatem repellendus, atque
+                      voluptatum ea itaque deleniti architecto accusantium rerum.</p>
+                  </blockquote>
+                </figure>
+              </div>
+              <div class="mb-3">
+                <div class="row g-0">
+                  <div class="col-md-3">
+                    <img src="https://via.placeholder.com/200" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="mb-3">
+                <div class="row g-0">
+                  <div class="col-md-9">
+                    <div class="card-body">
+                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                        additional content. This content is a little bit longer.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <img src="https://via.placeholder.com/200" class="img-fluid rounded-start" alt="...">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card.body position-relative" style="height: 70px;">
+              <div class="card-body position-absolute bottom-0 end-0">
+                <!-- Declaração do formulário -->
+                <form method="post" target="pagseguro" action="https://pagseguro.uol.com.br/v2/checkout/payment.html">
+
+                  <!-- Campos obrigatórios -->
+                  <input name="receiverEmail" type="hidden" value="suporte@lojamodelo.com.br">
+                  <input name="currency" type="hidden" value="BRL">
+
+                  <!-- Itens do pagamento (ao menos um item é obrigatório) -->
+                  <input name="itemId1" type="hidden" value="0001">
+                  <input name="itemDescription1" type="hidden" value="Notebook Prata">
+                  <input name="itemAmount1" type="hidden" value="24300.00">
+                  <input name="itemQuantity1" type="hidden" value="1">
+                  <input name="itemWeight1" type="hidden" value="1000">
+                  <input name="itemId2" type="hidden" value="0002">
+                  <input name="itemDescription2" type="hidden" value="Notebook Rosa">
+                  <input name="itemAmount2" type="hidden" value="25600.00">
+                  <input name="itemQuantity2" type="hidden" value="2">
+                  <input name="itemWeight2" type="hidden" value="750">
+
+                  <!-- Código de referência do pagamento no seu sistema (opcional) -->
+                  <input name="reference" type="hidden" value="REF1234">
+
+                  <!-- Informações de frete (opcionais) -->
+                  <input name="shippingType" type="hidden" value="1">
+                  <input name="shippingAddressPostalCode" type="hidden" value="01452002">
+                  <input name="shippingAddressStreet" type="hidden" value="Av. Brig. Faria Lima">
+                  <input name="shippingAddressNumber" type="hidden" value="1384">
+                  <input name="shippingAddressComplement" type="hidden" value="5o andar">
+                  <input name="shippingAddressDistrict" type="hidden" value="Jardim Paulistano">
+                  <input name="shippingAddressCity" type="hidden" value="Sao Paulo">
+                  <input name="shippingAddressState" type="hidden" value="SP">
+                  <input name="shippingAddressCountry" type="hidden" value="BRA">
+
+                  <!-- Dados do comprador (opcionais) -->
+                  <input name="senderName" type="hidden" value="José Comprador">
+                  <input name="senderAreaCode" type="hidden" value="11">
+                  <input name="senderPhone" type="hidden" value="56273440">
+                  <input name="senderEmail" type="hidden" value="comprador@uol.com.br">
+
+                  <!-- submit do form (obrigatório) -->
+                  <input alt="Pague com PagSeguro" name="submit" type="image"
+                    src="https://p.simg.uol.com.br/out/pagseguro/i/botoes/pagamentos/120x53-pagar.gif" />
+
+                </form>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
